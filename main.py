@@ -41,4 +41,8 @@ while True:
 
     print("user: {} :: cpu: {}".format(
         choicesDict[userChoice], choicesDict[cpuChoice]))
-    print(program(userChoice=userChoice, cpuChoice=cpuChoice))
+    output = program(userChoice=userChoice, cpuChoice=cpuChoice)
+    print(output)
+
+    if output == "You win" or output == "You Lose":
+        break
